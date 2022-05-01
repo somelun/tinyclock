@@ -1,9 +1,9 @@
 #include "tinyclock.h"
 
 int main(int argc, char* argv[]) {
-    TINYCLOCK;
+    TINYCLOCK_NAME("external");
     {
-        TINYCLOCK_NAME("asdasdasdsd");
+        TINYCLOCK_NAME("internal");
     }
     return 0;
 }
