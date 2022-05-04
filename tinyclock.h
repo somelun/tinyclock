@@ -1,19 +1,28 @@
 #pragma once
 
 #include <iostream>
+#include <chrono>
+
 
 namespace tinyclock {
+
+typedef std::chrono::system_clock::time_point time_t;
 
 struct timer {
     timer(const char* timer_name) {
         name = timer_name;
-        std::cout << name << std::endl;
+
+        start = std::chrono::system_clock::now();
+
     }
     ~timer() {
-        std::cout << name << std::endl;
+        time_t end = std::chrono::system_clock::now();
+        std::chrono::duration<double> diff = end - start;
+        std::cout << name << ": " << diff.count() << std::endl;
     }
 private:
     const char* name = nullptr;
+    time_t start;
 };
 
 }
