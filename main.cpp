@@ -3,7 +3,9 @@
 
 int main(int argc, char* argv[]) {
     TINYCLOCK_NAME("external");
-        std::this_thread::sleep_for(std::chrono::milliseconds(111));
+    std::this_thread::sleep_for(std::chrono::milliseconds(111));
+    
+    // other block
     {
         TINYCLOCK_NAME("internal");
         std::this_thread::sleep_for(std::chrono::milliseconds(222));
