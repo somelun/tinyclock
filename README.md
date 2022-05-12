@@ -1,7 +1,7 @@
 # tinyclock
 
-This is super simple single-header profile macros definition.  
-I always was writing it every time, then desided to just create it once and use when I need this.  
+This is super simple single-header profile macros definition. I always was writing it every time, then desided to just create it once and use when I need this.  
+To use just include file **tinyclock.h**  
 Example of usage can be found in main.cpp which is just this code:  
 
 ```cpp
