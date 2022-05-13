@@ -1,8 +1,8 @@
 # tinyclock
 
-This is super simple single-header profile macros definition. I always was writing it every time, then desided to just create it once and use when I need this.  
-To use just include file **tinyclock.h**  
-Example of usage can be found in main.cpp which is just this code:  
+This is super simple single-header profile macros definition. After writing it few times I desided to just commit it once and use when I need.  
+Im **master** branch I keep only inlude file **tinyclock.h**, because I plan to always use it as git submodule  
+Example of usage can be found in **dev** branch in main.cpp which is just this:  
 
 ```cpp
 #include "tinyclock.h"
