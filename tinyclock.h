@@ -15,6 +15,7 @@ struct timer {
         start = std::chrono::system_clock::now();
 
     }
+
     ~timer() {
         time_t end = std::chrono::system_clock::now();
         std::chrono::duration<double> diff = end - start;
