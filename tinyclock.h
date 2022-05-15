@@ -21,6 +21,11 @@ struct timer {
         std::chrono::duration<double> diff = end - start;
         std::cout << name << ": " << diff.count() << std::endl;
     }
+
+    std::string format_time(const double& time) {
+        return "";
+    }
+
 private:
     const char* name = nullptr;
     time_t start;
